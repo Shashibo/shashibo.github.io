@@ -9,22 +9,51 @@
     body {background-color: rgb(237, 100, 9);
           font-family: verdana; sans-serif}
     
+    .banner {width:100%; height:75px; background-color:rgb(237, 100, 9); margin: -10px; padding: 10px; position: fixed; z-index: 1; box-shadow: 0px 5px 5px rgb(237, 100, 9);}
+    
     .vulcan-head {color: red; font:bold; font-family: 'Alfa Slab One'; font-size:50px; text-shadow: 3px 3px 5px orange}
+    #img1 {position: relative; margin-top:100px;}
     #quote {color:blue; font-family: arial; font-size: 30px}
     #seleya {background-color:orange;}
     #hide {color: rgb(237, 100, 9);}
+    .places {width: 300px}
+    .other-dest {background-color: rgb(237, 100, 9); 
+                 width:270px; 
+                 height: 95%;
+                 padding-left: 20px;
+                 padding-top: 10px;
+                 border: 3px ridge red;
+                 position: fixed;
+                 top: 20px;
+                 right: 10px;
+                 z-index: 2;}
+    .button {
+      width: 200px;
+  background-color: #04AA6D;
+  border: 2px solid green;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;}
+  .button:hover {background-color: green;}
+  
 </style>
     <body>
     
-        <h1>Travel to <strong class="vulcan-head">Vulcan</strong></h1>
+        <h1 class="banner">Travel to <strong class="vulcan-head">Vulcan</strong></h1>
   
-        <img src="https://www.giantfreakinrobot.com/wp-content/uploads/2023/03/planet-vulcan-star-trek-900x506.jpg" width="1000" alt="vulcan landscape">
+        <img id="img1" src="https://www.giantfreakinrobot.com/wp-content/uploads/2023/03/planet-vulcan-star-trek-900x506.jpg" width="1000" alt="vulcan landscape">
  
  
  
  <!--THINGS TO DO-->
  
- 
+
         <h2>Things to see and do...</h2>
         <p><ul>
         <li >Visit ancient <strong>monsteries</strong></li>
@@ -40,6 +69,18 @@
  <!--PLACES TO GO-->
  
  
+ <div class="places">
+ 
+  <div class="other-dest">
+<h2>Other Destinations</h2>
+<p><button class="button">Orion</button>
+<p><button class="button">Earth</button>
+<p><button class="button">Risa</button>
+<p><button class="button">Betazed</button>
+</p>
+</div>
+
+
         <h2>Places to go...</h2>
         <ol>
         <li>The Forge
@@ -47,10 +88,11 @@
         <li>Vulcan Academy
       <a target="_blank" href="https://static.wikia.nocookie.net/memoryalpha/images/5/50/Mount_Seleya%2C_2285.jpg/revision/latest?cb=20090919142519&path-prefix=en"><li id="seleya"> Mount Seleya</a>
        </ol>
-       
-       <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/lava.png" width="400">
-       <p id="hide">...</p>
+</div>
 
+<img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/lava.png" width="400">
+       <p id="hide">...</p>
+ 
  
  <!--QUOTE-->
  
