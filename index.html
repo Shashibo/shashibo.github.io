@@ -1,24 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Project: Travel webpage</title>
-    </head>
-
 <style>
     body {background-color: rgb(237, 100, 9);
-          font-family: verdana; sans-serif}
+          font-family: verdana;}
     
     .banner {width:100%; height:75px; background-color:rgb(237, 100, 9); margin: -10px; padding: 10px; position: fixed; z-index: 1; box-shadow: 0px 5px 5px rgb(237, 100, 9);}
-    
-    .vulcan-head {color: red; font:bold; font-family: 'Alfa Slab One'; font-size:50px; text-shadow: 3px 3px 5px orange}
-    #img1 {position: relative; margin-top:100px;}
-    #quote {color:blue; font-family: arial; font-size: 30px}
-    #seleya {background-color:orange;}
-    #hide {color: rgb(237, 100, 9);}
-    .places {width: 300px}
+    .vulcan-head {color: red; font:bold; font-family: 'Alfa Slab One'; font-size:2em; text-shadow: 3px 3px 5px orange}
+    #img1 {position: relative; margin-top:100px; width: 75%; max-width: 1000px;}
+    .img2 {width: 50%;max-width: 400px;}
+    #quote {color:blue; font-family: arial; font-size: 2em;}
+    .sections {width: 300px; min-width: 20%;}
     .other-dest {background-color: rgb(237, 100, 9); 
-                 width:270px; 
+                 width:25%; 
+                 max-width: 270px;
                  height: 95%;
                  padding-left: 20px;
                  padding-top: 10px;
@@ -39,10 +37,20 @@
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer;}
+  cursor: pointer;
+  box-shadow: 0 2px #666;}
   .button:hover {background-color: green;}
+  .button:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
+  
+  ul li:hover {background-color: orange}
+  
+
   
 </style>
+</head>
     <body>
     
         <h1 class="banner">Travel to <strong class="vulcan-head">Vulcan</strong></h1>
@@ -55,21 +63,25 @@
  
 
         <h2>Things to see and do...</h2>
+        
+ <div class="sections">
         <p><ul>
         <li >Visit ancient <strong>monsteries</strong></li>
         <li>Feed the <strong>Sehlats!!!</strong></li>
-        <li>Board <strong>H.M.S. Bounty</strong></li>
+        <li>Board the <strong>T'Plana Hath</strong></li>
+        <li>Go desert hiking</li>
         </ul>
+        </div>
         
         <a target="_blank" href="https://memory-alpha.fandom.com/wiki/Sehlat">
-        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/712a7fc8-0892-42bb-a6af-52321135172b/d23bkvl-bf7f20b0-7455-450b-b99e-1010f599d5ff.jpg/v1/fit/w_709,h_515,q_70,strp/vulcan_sehlat_by_anariel_erestor_d23bkvl-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTE1IiwicGF0aCI6IlwvZlwvNzEyYTdmYzgtMDg5Mi00MmJiLWE2YWYtNTIzMjExMzUxNzJiXC9kMjNia3ZsLWJmN2YyMGIwLTc0NTUtNDUwYi1iOTllLTEwMTBmNTk5ZDVmZi5qcGciLCJ3aWR0aCI6Ijw9NzA5In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Gr4AGjbvfWdM2ocnOZDL9ewT5KwSp6ANpOiTC3zKq8k" width="400"></a>
+        <img class="img2" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/712a7fc8-0892-42bb-a6af-52321135172b/d23bkvl-bf7f20b0-7455-450b-b99e-1010f599d5ff.jpg/v1/fit/w_709,h_515,q_70,strp/vulcan_sehlat_by_anariel_erestor_d23bkvl-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTE1IiwicGF0aCI6IlwvZlwvNzEyYTdmYzgtMDg5Mi00MmJiLWE2YWYtNTIzMjExMzUxNzJiXC9kMjNia3ZsLWJmN2YyMGIwLTc0NTUtNDUwYi1iOTllLTEwMTBmNTk5ZDVmZi5qcGciLCJ3aWR0aCI6Ijw9NzA5In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Gr4AGjbvfWdM2ocnOZDL9ewT5KwSp6ANpOiTC3zKq8k"></a>
 
- <a href="form.html">Page 2</a>
+ 
  
  <!--PLACES TO GO-->
  
  
- <div class="places">
+ <div class="sections">
  
   <div class="other-dest">
 <h2>Other Destinations</h2>
@@ -82,21 +94,22 @@
 
 
         <h2>Places to go...</h2>
-        <ol>
-        <li>The Forge
-       <li> Shi'Khar City
-        <li>Vulcan Academy
-      <a target="_blank" href="https://static.wikia.nocookie.net/memoryalpha/images/5/50/Mount_Seleya%2C_2285.jpg/revision/latest?cb=20090919142519&path-prefix=en"><li id="seleya"> Mount Seleya</a>
-       </ol>
+        <ul>
+         <li>The Forge</li>
+         <li>ShiKhar City</li>
+         <li>Kir Provence</li>
+         <li>Vulcan Academy</li>
+      <a target="_blank" href="https://static.wikia.nocookie.net/memoryalpha/images/5/50/Mount_Seleya%2C_2285.jpg/revision/latest?cb=20090919142519&path-prefix=en"><li> Mount Seleya</a>
+       </ul>
 </div>
 
-<img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/lava.png" width="400">
-       <p id="hide">...</p>
+<img class="img2" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/lava.png">
+       <br>
  
  
  <!--QUOTE-->
  
  
-      <a target="_blank" href="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/04/ferengi-gambling-in-star-trek-deep-space-nine.jpg"> <h2 id="quote">Call us for a quote!</h2></a>
+      <a target="_blank" href="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/04/ferengi-gambling-in-star-trek-deep-space-nine.jpg"> <h2 id="quote">Open Subspace Channel</h2></a>
     </body>
 </html>
