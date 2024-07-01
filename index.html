@@ -15,6 +15,7 @@
     #quote {color:blue; font-family: arial; font-size: 2em;}
     .sections {width: 300px; min-width: 20%;}
     .other-dest {background-color: rgb(237, 100, 9); 
+                 color: black;
                  width:25%; 
                  max-width: 270px;
                  height: 95%;
@@ -25,6 +26,18 @@
                  top: 20px;
                  right: 10px;
                  z-index: 2;}
+     @media only screen and (max-width: 600px) {
+  .other-dest {
+    width: 90%;
+    max-width: none;
+    height: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    border: 3px ridge red;
+    position: static;
+    margin-top: 20px;
+  }
+}             
     .button {
       width: 200px;
   background-color: #04AA6D;
@@ -50,7 +63,7 @@
                    border-radius: 12px;
                    cursor: pointer;
                    box-shadow: 0 2px #666;
-                   width: 50%; max-width: 350px;
+                   width: 50%; max-width: 350px; min-width: 300px;
                    padding: 15px 10px;
                    font-size: 1.5em;}
                   .subspacebutton:hover {background-color: rgb(0, 92, 250);}
@@ -95,16 +108,6 @@
  
  
  <div class="sections">
- 
-  <div class="other-dest">
-<h2>Other Destinations</h2>
-<p><button class="button">Orion</button>
-<p><button class="button">Earth</button>
-<p><button class="button">Risa</button>
-<p><button class="button">Betazed</button>
-</p>
-</div>
-
 
         <h2>Places to go...</h2>
         <ul>
@@ -129,6 +132,20 @@
   <a target="_blank" href="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/04/ferengi-gambling-in-star-trek-deep-space-nine.jpg">
     <button class="subspacebutton">
     Open Subspace Channel
-    </button>
+    </button></a>
+        
+ <br>
+ <br>
+ <br>
+ <br>
+<div class="other-dest">
+<h2>Other Destinations</h2>
+<p><button class="button">Orion</button>
+<p><button class="button">Earth</button>
+<p><button class="button">Risa</button>
+<p><button class="button">Betazed</button>
+</p>
+</div>
+      
     </body>
 </html>
