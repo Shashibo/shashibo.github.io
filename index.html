@@ -146,6 +146,15 @@
 <p><a target="_blank" href="/betazed.html"<button class="button">Betazed</button></a>
 </p>
 </div>
-      
+<script>
+    var button = document.getElementById('subspacebutton');
+
+button.addEventListener('click', commSound); 
+
+function commSound() {
+ var audio = new Audio("sample.mp3");
+    audio.play();   
+}
+</script>      
     </body>
 </html>
