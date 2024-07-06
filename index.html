@@ -57,7 +57,7 @@
   box-shadow: 0 1px #666;
   transform: translateY(2px);
 }
-  .subspacebutton {background-color: rgb(17, 32, 240);
+  #subspacebutton {background-color: rgb(17, 32, 240);
                    color:white;
                    border:2px solid grey;
                    border-radius: 12px;
@@ -66,8 +66,8 @@
                    width: 50%; max-width: 350px; min-width: 300px;
                    padding: 15px 10px;
                    font-size: 1.5em;}
-                  .subspacebutton:hover {background-color: rgb(0, 92, 250);}
-                  .subspacebutton:active {
+                  #subspacebutton:hover {background-color: rgb(0, 92, 250);}
+                  #subspacebutton:active {
                    box-shadow: 0 1px #666;
                    transform: translateY(2px);
                    }
@@ -130,7 +130,7 @@
  <br>
  <br>
   <a target="_blank" href="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/04/ferengi-gambling-in-star-trek-deep-space-nine.jpg">
-    <button class="subspacebutton">
+    <button id="subspacebutton">
     Open Subspace Channel
     </button></a>
         
@@ -147,7 +147,7 @@
 </p>
 </div>
 <script>
-    var button = document.getElementById('subspacebutton');
+var button = document.getElementById('subspacebutton');
 
 button.addEventListener('click', commSound); 
 
