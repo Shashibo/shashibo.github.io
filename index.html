@@ -5,8 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Project: Travel webpage</title>
 <style>
+    
     body {background-color: rgb(237, 100, 9);
-          font-family: verdana;}
+    background-image: linear-gradient(145deg,
+  rgb(237, 100, 9) 80%,  
+  red 100%); 
+    font-family: verdana;}
     
     .banner {width:100%; height:75px; background-color:rgb(237, 100, 9); margin: -10px; padding: 10px; position: fixed; z-index: 1; box-shadow: 0px 5px 5px rgb(237, 100, 9);}
     .vulcan-head {color: red; font:bold; font-family: 'Alfa Slab One'; font-size:2em; text-shadow: 3px 3px 5px orange}
@@ -157,8 +161,8 @@ var button = document.getElementById('subspacebutton');
 button.addEventListener('click', commSound); 
 
 function commSound() {
-        audio.play();   
-    }
+        var audio = new Audio("/audio/I Ain’t Got Nobody.m4a");
+        audio.play(); 
     
 </script>   
         
