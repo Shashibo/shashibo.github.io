@@ -146,15 +146,22 @@
 <p><a target="_blank" href="/betazed.html"<button class="button">Betazed</button></a>
 </p>
 </div>
+        
 <script>
+    
+// Preload the audio file
+var audio = new Audio("/audio/I Ain’t Got Nobody.m4a");
+audio.preload = 'auto';
+    
 var button = document.getElementById('subspacebutton');
-
 button.addEventListener('click', commSound); 
 
 function commSound() {
- var audio = new Audio("/images/I Ain’t Got Nobody.m4a");
-    audio.play();   
-}
-</script>      
+        audio.currentTime = 0; // Rewind to the start if it has played before
+        audio.play();   
+    }
+    
+</script>   
+        
     </body>
 </html>
