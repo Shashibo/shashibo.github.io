@@ -158,12 +158,21 @@ audio.preload = 'auto';
 // old part*** var button = document.getElementById('subspacebutton');
 // old part*** button.addEventListener('click', commSound); 
 
+//var button = document.getElementById('subspacebutton');
+//button.addEventListener('click', function(event) {
+ //       commSound();
+//        event.preventDefault(); // Prevents the default behavior (opening the link) immediately
+//        setTimeout(function() {
+//            window.open(button.parentElement.href, '_blank'); // Open the link after a delay
+//        }, 1000); // Adjust the delay in milliseconds (2000ms = 2 seconds)
+//    }); 
+
 var button = document.getElementById('subspacebutton');
-button.addEventListener('click', function(event) {
+    button.addEventListener('click', function(event) {
         commSound();
         event.preventDefault(); // Prevents the default behavior (opening the link) immediately
         setTimeout(function() {
-            window.open(button.parentElement.href, '_blank'); // Open the link after a delay
+            window.location.href = button.parentElement.href; // Navigate to the link after a delay
         }, 1000); // Adjust the delay in milliseconds (2000ms = 2 seconds)
     }); 
     
