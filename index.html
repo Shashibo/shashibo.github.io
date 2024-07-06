@@ -92,7 +92,7 @@
  <!--THINGS TO DO-->
  
 
-        <h2>Things to see and do...1</h2>
+        <h2>Things to see and do...</h2>
         
  <div class="sections">
         <p><ul>
@@ -151,18 +151,16 @@
 </p>
 </div>
         
-<script>
-    
-// Preload the audio file
-
+<script>    
+var audio = new Audio("/audio/I Ain’t Got Nobody.m4a");
+audio.preload = 'auto';
     
 var button = document.getElementById('subspacebutton');
 button.addEventListener('click', commSound); 
 
 function commSound() {
         var audio = new Audio("/audio/I Ain’t Got Nobody.m4a");
-        audio.play(); 
-    
+        audio.play();     
 </script>   
         
     </body>
