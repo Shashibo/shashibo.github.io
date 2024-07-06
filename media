@@ -18,6 +18,7 @@ h1 {color: green;
 </style>
 
 <body>
+<h1>Some stuff about Vulcans</h1>
 <div>
 <object width="480" height="385">
   <param name="movie"
@@ -33,7 +34,12 @@ h1 {color: green;
          allowfullscreen="true" width="480" height="385"/>
 </div>
 <div>
-<audio src=""
+<h1>A little song</h1>
+<audio src="/images/I Ain’t Got Nobody.m4a"
+  controls="true" preload="true"></audio>
+</div>
+<div>
+<audio src="/images/I Ain’t Got Nobody.m4a"
   controls="true" preload="true"></audio>
 </div>
 </object>
