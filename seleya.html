@@ -17,6 +17,26 @@
   margin: 20px;}
     
   .image {position: relative; margin-top:100px; width: 100%;}
+
+.backbutton {
+      width: 100px;
+  background-color: rgb(17, 32, 240);
+  border: 2px solid grey;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 2px #666;}
+  .backbutton:hover {background-color: orange;}
+  .backbutton:active {
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
 </style>
     </head>
     
@@ -36,6 +56,26 @@
 </p>
 
 <img class="image" src="images/seleya_altar.jpg">
+
+<script>    
+var backbeep = new Audio("/audio/Back beep.mp4");
+backbeep.preload = 'auto';
+
+    
+//play sound
+var button = document.getElementById('backbutton');
+    button.addEventListener('click', function(event) {
+        backSound();
+        event.preventDefault(); 
+        setTimeout(function() {
+            window.location.href = button.parentElement.href;
+        }, 500); 
+    }); 
+    
+function backSound() {
+        backbeep.play(); }
+</script>
+    
 </body>
 
 </html>
