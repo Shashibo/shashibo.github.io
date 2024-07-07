@@ -154,6 +154,9 @@
 <script>    
 var audio = new Audio("/audio/Com Chirp.mp4");
 audio.preload = 'auto';
+
+var beep = new Audio("/audio/Beep.mp4");
+beep.preload = 'auto';
     
 // old part*** var button = document.getElementById('subspacebutton');
 // old part*** button.addEventListener('click', commSound); 
@@ -179,6 +182,16 @@ var button = document.getElementById('subspacebutton');
 function commSound() {
         audio.play(); }
 
+//beep sound
+var buttons = document.querySelectorAll('.button');
+buttons.forEach(function(button) {
+    button.addEventListener('click', function(event) {
+        playBeep();
+    });
+});
+
+function playBeep() {
+        beep.play(); }
 </script>   
         
     </body>
