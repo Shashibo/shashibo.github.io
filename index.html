@@ -157,19 +157,9 @@ audio.preload = 'auto';
 
 var beep = new Audio("/audio/Beep.mp4");
 beep.preload = 'auto';
+
     
-// old part*** var button = document.getElementById('subspacebutton');
-// old part*** button.addEventListener('click', commSound); 
-
-//var button = document.getElementById('subspacebutton');
-//button.addEventListener('click', function(event) {
- //       commSound();
-//        event.preventDefault(); // Prevents the default behavior (opening the link) immediately
-//        setTimeout(function() {
-//            window.open(button.parentElement.href, '_blank'); // Open the link after a delay
-//        }, 1000); // Adjust the delay in milliseconds (2000ms = 2 seconds)
-//    }); 
-
+//comm sound
 var button = document.getElementById('subspacebutton');
     button.addEventListener('click', function(event) {
         commSound();
@@ -182,11 +172,16 @@ var button = document.getElementById('subspacebutton');
 function commSound() {
         audio.play(); }
 
+    
 //beep sound
 var buttons = document.querySelectorAll('.button');
-buttons.forEach(function(button) {
-    button.addEventListener('click', function(event) {
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+        event.preventDefault();
         playBeep();
+        setTimeout(function() {
+            window.location.href = button.parentElement.href;
+        }, 1000);
     });
 });
 
