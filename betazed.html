@@ -9,25 +9,24 @@
 @keyframes getbigger {
                 from {
                     width: 10%;
+                    opacity: 0;
                 }
                 to {
                     width: 90%;
+                    opacity: 1;
                 }
-               from {
-                   opacity: 0;
-             }
-                to {
-                   opacity: 1;
-             }
             }
+    
 @keyframes slide-in {
   from {
     translate: 150vw 0;
     scale: 200% 1;
+    opacity: 0;
   }
   to {
     translate: 0 0;
     scale: 100% 1;
+    opacity: 1;
   }
 }    
 body {background-image: linear-gradient(to bottom,
@@ -37,7 +36,11 @@ body {background-image: linear-gradient(to bottom,
       background-attachment: fixed; 
       padding: 20px;
       margin: 20px;}
-h1 {animation-duration: 2s;
+    
+h1 {opacity: 0;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
     animation-name: slide-in;
     color: green;
     font-family: verdana sans-serif;
@@ -45,7 +48,7 @@ h1 {animation-duration: 2s;
     font-size: 50px;}
     
 .image {animation-name: getbigger;
-        animation-duration: 4s;
+        animation-duration: 3s;
        width: 90%; max-width: 1000px;}
 
 .backbutton {
